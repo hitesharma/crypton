@@ -1,5 +1,5 @@
 const program = require('commander');
-const key = require('../lib/key');
+const key = require('../commands/key');
 
 program
     .command('set')
