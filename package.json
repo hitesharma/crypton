@@ -1,0 +1,27 @@
+{
+  "name": "crypton",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": "./bin/crypton.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hitesharma1/crypton.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hitesharma1/crypton/issues"
+  },
+  "homepage": "https://github.com/hitesharma1/crypton#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "colors": "^1.4.0",
+    "commander": "^5.1.0",
+    "configstore": "^5.0.1",
+    "inquirer": "^7.2.0"
+  }
+}
