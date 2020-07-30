@@ -1,6 +1,6 @@
 const program = require('commander');
 const check = require('../command/check');
-const coins = ['BTC','ETH','XRP','BCH','BSV','LTC','ADA','BNB','EOS','LINK','XTZ'];
+const coins = ['BTC', 'ETH', 'XRP', 'BCH', 'BSV', 'LTC', 'ADA', 'BNB', 'EOS', 'LINK', 'XTZ'];
 
 program
     .command('price')
@@ -16,5 +16,20 @@ program
         'USD'
     )
     .action((cmd) => check.price(cmd));
+
+program
+    .command('high')
+    .description('Get all time high price')
+    .option(
+        '--coin <type>',
+        'Add specific crypto CSV format',
+        coins
+    )
+    .option(
+        '--curr <currency>',
+        'Change currency',
+        'USD'
+    )
+    .action((cmd) => check.high(cmd));
 
 program.parse(process.argv);
