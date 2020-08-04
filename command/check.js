@@ -32,6 +32,21 @@ const check = {
       console.error(err.message.red);
     }
   },
+
+  async supply(cmd) {
+    try {
+      const keyManager = new KeyManager();
+      const key = keyManager.getKey();
+
+      const api = new CryptoAPI(key);
+
+      const supplyData = await api.getSupplyData(cmd.coin);
+
+      console.log(supplyData);
+    } catch (err) {
+      console.error(err.message.red);
+    }
+  }
 };
 
 module.exports = check;

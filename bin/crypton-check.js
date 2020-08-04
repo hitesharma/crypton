@@ -25,11 +25,16 @@ program
         'Add specific crypto CSV format',
         coins
     )
-    .option(
-        '--curr <currency>',
-        'Change currency',
-        'USD'
-    )
     .action((cmd) => check.high(cmd));
+
+program
+    .command('supply')
+    .description('Get market supply')
+    .option(
+        '--coin <type>',
+        'Add specific crypto CSV format',
+        coins
+    )
+    .action((cmd) => check.supply(cmd));
 
 program.parse(process.argv);
