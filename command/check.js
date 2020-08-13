@@ -46,7 +46,22 @@ const check = {
     } catch (err) {
       console.error(err.message.red);
     }
-  }
+  },
+
+  async cap(cmd) {
+    try {
+      const keyManager = new KeyManager();
+      const key = keyManager.getKey();
+
+      const api = new CryptoAPI(key);
+
+      const capData = await api.getCapData(cmd.coin);
+
+      console.log(capData);
+    } catch (err) {
+      console.error(err.message.red);
+    }
+  },
 };
 
 module.exports = check;

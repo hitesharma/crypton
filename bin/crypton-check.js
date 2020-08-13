@@ -37,4 +37,14 @@ program
     )
     .action((cmd) => check.supply(cmd));
 
+program
+    .command('cap')
+    .description('Get market cap')
+    .option(
+        '--coin <type>',
+        'Add specific crypto CSV format',
+        coins
+    )
+    .action((cmd) => check.cap(cmd));
+
 program.parse(process.argv);

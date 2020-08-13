@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hitesharma1/crypton.git"
+    "url": "git+https://github.com/hitesharma/crypton.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hitesharma1/crypton/issues"
+    "url": "https://github.com/hitesharma/crypton/issues"
   },
-  "homepage": "https://github.com/hitesharma1/crypton#readme",
+  "homepage": "https://github.com/hitesharma/crypton#readme",
   "dependencies": {
     "axios": "^0.19.2",
     "colors": "^1.4.0",
